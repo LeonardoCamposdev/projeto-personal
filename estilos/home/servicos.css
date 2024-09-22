@@ -41,3 +41,13 @@
   }
   
 }
+
+@media (max-width:550px){
+  .servicos-lista{
+    padding: 5px;
+  }
+  .border-dt-dd{
+    padding: 10px;
+  }
+  
+}
