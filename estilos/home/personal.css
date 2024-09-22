@@ -1,0 +1,92 @@
+.personal-bg {
+  background-color: #f6f4ff;
+}
+
+.personal-conteudo {
+  display: grid;
+  grid-template-columns: 1fr 450px;
+  gap: 60px;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 60px;
+  height: 1000px;
+}
+
+.personal-conteudo h1 {
+  font-size: 3rem;
+  margin-bottom: 12px;
+  z-index: 1;
+  position: relative;
+}
+
+.personal-conteudo h1::before {
+  content: "";
+  display: block;
+  width: 130px;
+  height: 100px;
+  background: url(../../images/detalhe.svg) no-repeat center center;
+  position: absolute;
+  z-index: -1;
+  top: -15px;
+  left: -40px;
+}
+
+.personal-conteudo p {
+  font-size: 1.2rem;
+  padding: 12px;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+.personal-conteudo img {
+  border-radius: 28px;
+  max-width: 435px;
+}
+
+.card {
+  --background: linear-gradient(to left, #f7ba2b 0%, #d77708 100%);
+  padding: 8px;
+  border-radius: 2rem;
+  overflow: visible;
+  background: #f7ba2b;
+  background: var(--background);
+  position: relative;
+  z-index: 1;
+}
+
+.card::after {
+  position: absolute;
+  content: "";
+  top: 30px;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  filter: blur(25px);
+  background: #f7ba2b;
+  background: var(--background);
+  transition: opacity 0.5s;
+}
+
+/*Hover*/
+.card:hover::after {
+  opacity: 0;
+}
+
+.card:hover .card-info {
+  color: #f7ba2b;
+  transition: color 1s;
+}
+
+@media (max-width: 965px) {
+  .personal-conteudo {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 655px) {
+  .personal-conteudo img {
+    max-width: 100%;
+  }
+}
