@@ -1,0 +1,43 @@
+.servicos-bg{
+  background-color: #282828;
+}
+
+.servicos-conteudo h1{
+  background-image: linear-gradient(to right, #282828,#4C4C4C, #4C4C4C, #282828);
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-bottom: 80px;
+  letter-spacing: 3px;
+  text-shadow: 1px 2px black;
+  text-align: center;
+}
+
+.servicos-lista{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding: 20px;
+}
+
+.border-dt-dd{
+  border: 2px solid var(--cor-5);
+  padding: 30px;
+  margin-bottom: 20px;
+}
+
+.servicos-lista dt{
+  padding-bottom: 20px;
+  font-weight: 600;
+  font-size: 2.6rem;
+}
+
+.servicos-lista dd{
+  padding-bottom: 20px;
+}
+
+@media (max-width:840px){
+  .servicos-lista{
+    grid-template-columns: 1fr;
+  }
+  
+}
