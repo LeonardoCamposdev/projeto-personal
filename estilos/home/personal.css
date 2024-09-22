@@ -1,5 +1,5 @@
 .personal-bg {
-  background-color: #f6f4ff;
+  background-color: #f1edff;
 }
 
 .personal-conteudo {
@@ -9,6 +9,7 @@
   align-items: center;
   justify-content: space-around;
   margin-top: 60px;
+  padding-bottom: 60px;
 }
 
 .personal-conteudo h1 {
@@ -35,6 +36,7 @@
   padding: 12px;
   font-weight: 500;
   margin-bottom: 40px;
+  line-height: 1.6;
 }
 
 .personal-conteudo img {
@@ -56,7 +58,7 @@
 .card::after {
   position: absolute;
   content: "";
-  top: 30px;
+  top: 10px;
   left: 0;
   right: 0;
   z-index: -1;
@@ -81,6 +83,14 @@
 @media (max-width: 965px) {
   .personal-conteudo {
     grid-template-columns: 1fr;
+  }
+
+  .card {
+    max-width: 450px;
+  }
+
+  .personal-conteudo img {
+    margin: 0 auto;
   }
 }
 
