@@ -8,13 +8,14 @@ export default function initMenuMobile(){
   function openMenu(event){
     menuList.classList.add("active");
     menuButton.classList.add("active");
-    outsideCLick(menuList,eventos,()=>{
+
+    outsideCLick(this,'click', () =>{
+      this.classList.remove("active");
       menuList.classList.remove("active");
-      menuButton.classList.remove("active");
     })
   }
 
   eventos.forEach((evento) =>{
     menuButton.addEventListener(evento,openMenu);
   })
-}
+}//
