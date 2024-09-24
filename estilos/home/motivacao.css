@@ -1,0 +1,77 @@
+.motivacao-bg {
+  background-color: #f1edff;
+}
+
+.motivacao-container {
+  max-width: 100%;
+}
+
+.motivacao-conteudo {
+  padding: 70px 0px;
+}
+
+.motivacao-teaser {
+  display: grid;
+  grid-template-columns: 1fr minmax(min-content, 500px) 1fr;
+  gap: 40px;
+}
+
+.motivacao-teaser .li-1 {
+  background: linear-gradient(to right, #4a4a4a 10%, #201e1e 90%);
+  height: 600px;
+  box-shadow: 2px 5px 20px rgb(58, 58, 58);
+}
+
+.motivacao-teaser .li-1 p {
+  font-size: 5rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 50%;
+  text-shadow: 1px 1px 20px rgb(255 129 0);
+}
+
+.motivacao-teaser .li- img {
+  height: 100%;
+}
+
+.motivacao-teaser .li-2 {
+  background: linear-gradient(to left, #f7ba2b 0%, #d77708 100%);
+  border-top-left-radius: 48px;
+  border-top-right-radius: 48px;
+}
+
+.motivacao-teaser .li-2 p {
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 40%;
+  padding: 10px;
+  text-shadow: 1px 1px 20px rgb(255 129 0);
+}
+
+.motivacao-teaser .li-3 {
+  background: linear-gradient(to left, #4a4a4a 10%, #201e1e 90%);
+  box-shadow: 2px 5px 20px rgb(58, 58, 58);
+}
+
+.motivacao-teaser .li-3 p {
+  font-size: 5rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 50%;
+  text-shadow: 1px 1px 20px rgb(255 129 0);
+}
+
+
+@media (max-width:1465px){
+  .motivacao-teaser .li-1 p,
+  .motivacao-teaser .li-3 p {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width:1237px){
+  .motivacao-teaser {
+    grid-template-columns: 1fr;
+  }
+}
