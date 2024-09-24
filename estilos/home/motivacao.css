@@ -26,7 +26,7 @@
   font-size: 5rem;
   text-transform: uppercase;
   text-align: center;
-  margin-top: 50%;
+  margin-top: 240px;
   text-shadow: 1px 1px 20px rgb(255 129 0);
 }
 
@@ -60,7 +60,7 @@
   font-size: 5rem;
   text-transform: uppercase;
   text-align: center;
-  margin-top: 50%;
+  margin-top: 240px;
   text-shadow: 1px 1px 20px rgb(255 129 0);
 }
 
@@ -88,7 +88,6 @@
   .motivacao-teaser .li-1 p,
   .motivacao-teaser .li-3 p {
     font-size: 2.5rem;
-    margin-top: 100%;
   }
 }
 
