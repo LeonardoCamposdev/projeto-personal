@@ -35,6 +35,7 @@
 }
 
 .motivacao-teaser .li-2 {
+  height: 600px;
   background: linear-gradient(to left, #f7ba2b 0%, #d77708 100%);
   border-top-left-radius: 48px;
   border-top-right-radius: 48px;
@@ -44,12 +45,13 @@
   font-size: 3rem;
   text-transform: uppercase;
   text-align: center;
-  margin-top: 40%;
+  margin-top: 30%;
   padding: 10px;
   text-shadow: 1px 1px 20px rgb(255 129 0);
 }
 
 .motivacao-teaser .li-3 {
+  height: 600px;
   background: linear-gradient(to left, #4a4a4a 10%, #201e1e 90%);
   box-shadow: 2px 5px 20px rgb(58, 58, 58);
 }
@@ -70,8 +72,35 @@
   }
 }
 
-@media (max-width:1237px){
+
+@media (max-width:1245px){
+  .motivacao-teaser {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .motivacao-teaser .li-1 p,
+  .motivacao-teaser .li-3 p {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width:830px){
+  .motivacao-teaser .li-1 p,
+  .motivacao-teaser .li-3 p {
+    font-size: 2.5rem;
+    margin-top: 100%;
+  }
+}
+
+
+@media (max-width:740px){
   .motivacao-teaser {
     grid-template-columns: 1fr;
+  }
+
+  .motivacao-teaser .li-1 p,
+  .motivacao-teaser .li-3 p {
+    font-size: 4rem;
+    margin-top: 240px;
   }
 }
