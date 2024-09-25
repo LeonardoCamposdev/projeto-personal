@@ -23,8 +23,23 @@ img {
   height: auto;
 }
 
-  .container{
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 70px 20px 0px 20px;
-  }
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 70px 20px 0px 20px;
+}
+
+.orcamento ul{
+  margin-bottom: 30px;
+  margin-left: 20px;
+  background-color: var(--cor-5);
+  flex-direction: column;
+  gap: 20px;
+  display: inline-flex;
+  padding: 30px 15px;
+  border-radius:20px 20px 20px 20px;
+  position: fixed;
+  bottom: 25px;
+  right: 20px;
+  z-index: 5;
+}

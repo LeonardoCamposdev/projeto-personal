@@ -2,6 +2,10 @@
   background-color: #282828;
 }
 
+.resultados-conteudo{
+  padding-bottom: 60px;
+}
+
 .resultados-conteudo h1 {
   background-image: linear-gradient(
     to right,
@@ -23,7 +27,6 @@
   grid-template-columns: 1fr 1fr 1fr;
   gap: 30px;
   justify-items: center;
-
 }
 
 .resultados-lista li {
@@ -50,5 +53,11 @@
 @media (max-width: 810px) {
   .resultados-lista {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 430px) {
+  .resultados-lista img {
+    max-width: 340px;
   }
 }
