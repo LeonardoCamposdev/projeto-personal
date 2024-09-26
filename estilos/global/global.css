@@ -44,10 +44,6 @@ img {
   z-index: 5;
 }
 
-.orcamento ul li{
-
-}
-
 .orcamento ul li:hover{
   box-shadow: 1px 1px 20px rgb(255, 51, 0);
   border-radius: 50%;
