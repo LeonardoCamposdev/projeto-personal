@@ -59,7 +59,7 @@
 
 .contato-redes .teste-2 {
   display: flex;
-  gap: 0px 60px;
+  gap: 60px 60px;
   flex-wrap: wrap;
   justify-content: center;
   align-items: baseline;
@@ -68,7 +68,6 @@
 .contato-redes .teste-2 a {
   display: flex;
   gap: 40px;
-  margin-bottom: 50px;
 }
 
 .contato-redes p {
