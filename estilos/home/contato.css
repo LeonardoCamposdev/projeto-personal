@@ -58,7 +58,7 @@
 
 .contato-redes .teste-2 {
   display: flex;
-  gap: 60px 60px;
+  gap: 26px 60px;
   flex-wrap: wrap;
   justify-content: center;
   align-items: baseline;
@@ -73,6 +73,12 @@
   font-size: 1rem;
   text-transform: uppercase;
   font-weight: 700;
+}
+
+@media(max-width:985px){
+  .contato-redes {
+    height: 500px;
+  }
 }
 
 @media (max-width:815px){
