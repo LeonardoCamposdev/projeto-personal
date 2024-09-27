@@ -29,10 +29,10 @@
 .contato-redes {
   max-width: 1000px;
   margin: 0 auto;
-  height: 500px;
+  height: 450px;
   width: 90%;
   border-radius: 28px;
-  background-color: #ff9a22;
+  background-color: var(--cor-3);
   display: grid;
   justify-items: center;
   align-content: space-evenly;
