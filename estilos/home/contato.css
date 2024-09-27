@@ -32,9 +32,8 @@
   height: 500px;
   width: 90%;
   border-radius: 28px;
-  background-color: var(--cor-3);
+  background-color: #ff9a22;
   display: grid;
-  justify-content: center;
   justify-items: center;
   align-content: space-evenly;
   box-shadow: 1px 2px 12px rgb(58, 58, 58);
