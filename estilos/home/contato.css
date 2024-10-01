@@ -6,7 +6,7 @@
   max-width: 100%;
 }
 
-.contato-conteudo  {
+.contato-conteudo {
   font-size: 2.5rem;
   text-transform: uppercase;
   text-align: center;
@@ -46,14 +46,44 @@
 }
 
 .contato-redes a:hover {
-  background: linear-gradient(to right, #f00505 0%, #000000 100%);
   color: var(--cor-1);
 }
 
-
-.contato-redes .teste-1 a {
+.contato-redes .teste-1 a,
+.contato-redes .teste-2 a {
   display: flex;
   gap: 10px;
+  transition: all 1000ms;
+  position: relative;
+  overflow: hidden;
+  outline: 2px solid #f0462f;
+}
+
+.contato-redes .teste-1 a:hover,
+.contato-redes .teste-2 a:hover {
+  color: #ffffff;
+  transform: scale(1.1);
+  outline: 2px solid #fcfcfc;
+  box-shadow: 4px 5px 17px -4px #72160a;
+}
+
+.contato-redes .teste-1 a::before,
+.contato-redes .teste-2 a::before {
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color: #9e2f03;
+  transform: skewX(45deg);
+  z-index: -1;
+  transition: width 1000ms;
+}
+
+.contato-redes .teste-1 a:hover::before,
+.contato-redes .teste-2 a:hover::before {
+  width: 250%;
 }
 
 .contato-redes .teste-2 {
@@ -75,31 +105,30 @@
   font-weight: 700;
 }
 
-@media(max-width:985px){
+@media (max-width: 985px) {
   .contato-redes {
     height: 500px;
   }
 }
 
-@media (max-width:815px){
-  
-.contato-conteudo  {
-  font-size: 1.8rem;
-}
+@media (max-width: 815px) {
+  .contato-conteudo {
+    font-size: 1.8rem;
+  }
 
   .contato-redes a {
     padding: 28px 122px;
-}
+  }
 }
 
-@media (max-width:460px){
-    .contato-redes a {
-      padding: 28px 100px;
+@media (max-width: 460px) {
+  .contato-redes a {
+    padding: 28px 100px;
   }
-  }
+}
 
-  @media (max-width:430px){
-    .contato-redes a {
-      padding: 28px 80px;
+@media (max-width: 430px) {
+  .contato-redes a {
+    padding: 28px 80px;
   }
-  }
+}
