@@ -28,8 +28,8 @@
 }
 
 .feedback-clientes-lista li{
-  height: 350px;
-  width: 280px;
+  height: 380px;
+  width: 300px;
   padding: 75px 34px;
   text-align: center;
   color: var(--cor-0);
@@ -55,7 +55,7 @@
   border-radius: 50%;
   background-color: #F7F7F7;
   top: -40px;
-  left: 95px;
+  left: 105px;
   box-shadow: -1px -3px 0px 15px #ffffff;
 }
 
@@ -70,7 +70,7 @@
   border-radius: 50%;
   background-color: #F7F7F7;
   top: -40px;
-  left: 95px;
+  left: 105px;
   box-shadow: -1px -3px 0px 15px #ffffff;
 }
 
@@ -85,7 +85,7 @@
   border-radius: 50%;
   background-color: #F7F7F7;
   top: -40px;
-  left: 95px;
+  left: 105px;
   box-shadow: -1px -3px 0px 15px #ffffff;
 }
 
@@ -93,6 +93,8 @@
 .feedback-clientes-lista .li-1,
 .feedback-clientes-lista .li-3{
   background: linear-gradient(to right, #4a4a4a 10%, #201e1e 90%);
+  border-top-left-radius: 28px;
+  border-top-right-radius: 28px;
 }
 
 .feedback-clientes-lista .li-2{
