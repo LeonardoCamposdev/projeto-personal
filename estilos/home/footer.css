@@ -1,0 +1,13 @@
+.footer-bg{
+  background-color: var(--cor-1);
+}
+
+.footer-conteudo{
+  text-align: center;
+  font-size: 0.9rem;
+  padding: 20px;
+}
+
+.footer-conteudo a:hover{
+  color: #f7381f;
+}
