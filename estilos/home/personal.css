@@ -80,6 +80,31 @@
   transition: color 1s;
 }
 
+.personal-ficha-treino {
+  padding: 20px;
+  height: 110px;
+  max-width: 60%;
+  background-color: var(--cor-3);
+  border-top-right-radius: 48px;
+  display: flex;
+  align-items: center;
+  gap: 0px 40px;
+}
+
+.personal-ficha-treino p {
+  font-size: 3rem;
+}
+
+.personal-ficha-treino img {
+  max-width: 70px;
+}
+
+@media (max-width: 1264px) {
+  .personal-ficha-treino p {
+    font-size: 2.5rem;
+  }
+}
+
 @media (max-width: 965px) {
   .personal-conteudo {
     grid-template-columns: 1fr;
@@ -94,8 +119,27 @@
   }
 }
 
+@media (max-width:714px){
+  .personal-ficha-treino p {
+    font-size: 2rem;
+  }
+}
+
 @media (max-width: 655px) {
   .personal-conteudo img {
     max-width: 100%;
+  }
+}
+
+
+@media (max-width:480px){
+  .personal-ficha-treino p {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width:407px){
+  .personal-ficha-treino p {
+    font-size: 1.2rem;
   }
 }
