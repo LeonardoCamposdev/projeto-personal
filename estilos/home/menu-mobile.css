@@ -35,10 +35,6 @@
     transform: rotate(90deg);
   }
 
-  .js.dropdown-menu {
-    position: static;
-    border: none;
-  }
 
   .js [data-menu="list"] {
     display: none;
@@ -50,11 +46,23 @@
     top: 113px;
     padding: 18px 7px 20px;
     box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2);
+    animation: show-right 0.6s forwards;
+  }
+
+  @keyframes show-right{
+    from{
+      opacity: 0;
+      transform: translate3d(0, 0, 60px);
+    }
+    to{
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
   }
 
   .js [data-menu="list"].active {
     display: block;
-    animation: show-right 0.3s forwards;
+    animation: show-right 0.6s forwards;
     text-align: center;
   }
 }
