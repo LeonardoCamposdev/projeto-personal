@@ -57,7 +57,7 @@
 .js .teste {
   opacity: 0;
   transform: translate3d(-800px, 0, 0);
-  transition: 2.8s;
+  transition: 2.3s;
 }
 
 .js .teste.ativo {
