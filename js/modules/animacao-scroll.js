@@ -6,7 +6,6 @@ export  function initAnimacaoScrollLeft(){
     function animaScroll(){
       scrollLeft.forEach((item) =>{
         const itemTop = item.getBoundingClientRect().top - windowMetade;
-        console.log(itemTop)
         if(itemTop < 0){
           item.classList.add('ativo');
         }
@@ -26,7 +25,6 @@ export  function initAnimacaoScrollRight(){
     function animaScroll(){
       scrollLeft.forEach((item) =>{
         const itemTop = item.getBoundingClientRect().top - windowMetade;
-        console.log(itemTop)
         if(itemTop < 0){
           item.classList.add('ativo');
         }
@@ -46,7 +44,6 @@ export  function initAnimacaoScrollUp(){
     function animaScroll(){
       scrollLeft.forEach((item) =>{
         const itemTop = item.getBoundingClientRect().top - windowMetade;
-        console.log(itemTop)
         if(itemTop < 0){
           item.classList.add('ativo');
         }
@@ -66,7 +63,6 @@ export  function initAnimacaoScrollDown(){
     function animaScroll(){
       scrollLeft.forEach((item) =>{
         const itemTop = item.getBoundingClientRect().top - windowMetade;
-        console.log(itemTop)
         if(itemTop < 0){
           item.classList.add('ativo');
         }
@@ -87,7 +83,6 @@ export  function initAnimacaoScrollLeftEspecial(){
     function animaScroll(){
       scrollLeft.forEach((item) =>{
         const itemTop = item.getBoundingClientRect().top - windowMetade;
-        console.log(itemTop)
         if(itemTop < 0){
           item.classList.add('ativo');
         }

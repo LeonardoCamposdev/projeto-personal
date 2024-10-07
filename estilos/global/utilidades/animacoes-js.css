@@ -45,8 +45,8 @@
 
 .js [data-anime="scroll-left-especial"] {
   opacity: 0;
-  transform: translate3d(-60px, 0, 0);
-  transition: 1.8s;
+  transform: translate3d(-800px, 0, 0);
+  transition: 2s;
 }
 
 .js [data-anime="scroll-left-especial"].ativo {
