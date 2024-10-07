@@ -1,9 +1,14 @@
 import initMenuMobile from "./modules/menu-mobile.js";
 import initMenuInternoScroll from "./modules/menu-interno-scroll.js";
-import initAnimacaoScroll from "./modules/animacao-scroll.js";
 import initPluginScroll from "./modules/plugin-scroll.js";
+import { initAnimacaoScrollLeft, initAnimacaoScrollRight, initAnimacaoScrollUp, initAnimacaoScrollDown, initAnimacaoScrollLeftEspecial } from "./modules/animacao-scroll.js";
 
 initMenuMobile();
 initMenuInternoScroll();
-initAnimacaoScroll();
 initPluginScroll();
+initAnimacaoScrollLeft();
+initAnimacaoScrollRight();
+initAnimacaoScrollUp();
+initAnimacaoScrollDown();
+initAnimacaoScrollLeftEspecial();
+
