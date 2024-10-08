@@ -47,7 +47,7 @@ export  function initAnimacaoScrollUpEspecial(){
   const scrollLeft = document.querySelectorAll('[data-anime="scroll-up-especial"]');
 
   if(scrollLeft.length){
-    const windowMetade = window.innerHeight * 0.9;
+    const windowMetade = window.innerHeight * 0.7;
     function animaScroll(){
       scrollLeft.forEach((item) =>{
         const itemTop = item.getBoundingClientRect().top - windowMetade;
