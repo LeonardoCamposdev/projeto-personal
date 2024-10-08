@@ -70,7 +70,7 @@
 
 .js [data-anime="scroll-right-especial"] {
   opacity: 0;
-  transform: translate3d(750px, 0, 0);
+  transform: translate3d(140px, 0, 0);
   transition: 2s;
 }
 

@@ -16,6 +16,10 @@
   padding: 70px 20px 0px 20px;
 }
 
+.contato-conteudo span{
+  display: inline-block;
+}
+
 .contato-redes-container {
   max-width: 100%;
 }
