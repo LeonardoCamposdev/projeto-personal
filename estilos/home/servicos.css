@@ -23,27 +23,27 @@
   border: 2px solid var(--cor-5);
   padding: 30px;
   margin-bottom: 20px;
+  position: relative;
 }
 
 .servicos-lista dt{
   padding-bottom: 20px;
   font-weight: 600;
   font-size: 2.6rem;
-  position: relative;
+  cursor: pointer;
 }
 
-/*.servicos-lista dt::after{
+.servicos-lista dt::after{
   content: "";
   position: absolute;
   display: block;
-  background: url(../../icons/extension_icon\ \(3\).png);
+  background: url(../../icons/extension_icon.png);
   background-repeat: no-repeat;
-  height: 80px;
-  width: 80px;
-  right: 40px;
-  top: 20px;
+  height: 60px;
+  width: 60px;
+  right: 0px;
+  top: 5px;
 }
-*/
 .servicos-lista dd{
   padding-bottom: 20px;
   display: none;
@@ -53,12 +53,36 @@
   display: block;
 }
 
+.servicos-lista dd.ativo::after{
+  content: "";
+  position: absolute;
+  display: block;
+  background: url(../../icons/extension_icon-2.png);
+  background-repeat: no-repeat;
+  height: 60px;
+  width: 60px;
+  right: 0px;
+  top: 5px;
+}
+
+@media(max-width:952px){
+  .servicos-lista dt{
+    font-size: 2.3rem;
+  }
+}
+
+@media(max-width:882px){
+  .servicos-lista dt{
+    font-size: 2.1rem;
+  }
+}
 
 @media (max-width:840px){
   .servicos-lista{
     grid-template-columns: 1fr;
   }
   
+
 }
 
 @media (max-width:550px){
