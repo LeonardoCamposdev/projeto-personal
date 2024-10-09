@@ -29,11 +29,30 @@
   padding-bottom: 20px;
   font-weight: 600;
   font-size: 2.6rem;
+  position: relative;
 }
 
+/*.servicos-lista dt::after{
+  content: "";
+  position: absolute;
+  display: block;
+  background: url(../../icons/extension_icon\ \(3\).png);
+  background-repeat: no-repeat;
+  height: 80px;
+  width: 80px;
+  right: 40px;
+  top: 20px;
+}
+*/
 .servicos-lista dd{
   padding-bottom: 20px;
+  display: none;
 }
+
+.servicos-lista dd.ativo{
+  display: block;
+}
+
 
 @media (max-width:840px){
   .servicos-lista{
