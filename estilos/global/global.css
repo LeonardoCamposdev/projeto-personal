@@ -48,3 +48,22 @@ img {
   box-shadow: 1px 1px 20px rgb(255, 51, 0);
   border-radius: 50%;
 }
+
+.btn-1{
+  margin-top: 26px;
+  background-color: #9e2f03;
+  border-radius: 20px 20px 20px 20px;
+  font-size: 1.1rem;
+  padding: 16px 12px;
+  text-align: end;
+  text-transform: uppercase;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.btn-1:hover{
+  color: #ffffff;
+  outline: 2px solid #fcfcfc;
+  box-shadow: 4px 5px 17px -4px #72160a;
+  background-color: var(--cor-5)
+}
