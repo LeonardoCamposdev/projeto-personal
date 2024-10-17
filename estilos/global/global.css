@@ -49,7 +49,7 @@ img {
   border-radius: 50%;
 }
 
-.btn-1{
+.btn-1 {
   margin-top: 26px;
   background-color: #9e2f03;
   border-radius: 20px 20px 20px 20px;
@@ -57,13 +57,33 @@ img {
   padding: 16px 12px;
   text-align: end;
   text-transform: uppercase;
-  border: 1px solid white;
   cursor: pointer;
+  transition: all 1000ms;
+  position: relative;
+  overflow: hidden;
+  outline: 2px solid #f0462f;
 }
 
 .btn-1:hover{
   color: #ffffff;
+  transform: scale(1.1);
   outline: 2px solid #fcfcfc;
   box-shadow: 4px 5px 17px -4px #72160a;
-  background-color: var(--cor-5)
+}
+
+.btn-1::before{
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color: var(--cor-5);
+  transform: skewX(45deg);
+  z-index: -1;
+  transition: width 1000ms;
+}
+
+.btn-1:hover::before{
+  width: 250%;
 }
