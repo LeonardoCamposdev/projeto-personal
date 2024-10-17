@@ -62,6 +62,7 @@ img {
   position: relative;
   overflow: hidden;
   outline: 2px solid #f0462f;
+  border: none;
 }
 
 .btn-1:hover{
