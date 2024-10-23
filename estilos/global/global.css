@@ -88,3 +88,9 @@ img {
 .btn-1:hover::before{
   width: 250%;
 }
+
+@media (max-width:398px){
+  .btn-1 {
+    font-size: 1rem;
+  }
+}
