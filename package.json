@@ -1,0 +1,17 @@
+{
+  "name": "projeto-personal",
+  "version": "1.0.0",
+  "description": "projeto-personal",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack",
+    "build": "webpack --mode production"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^9.39.1",
+    "webpack": "^5.103.0",
+    "webpack-cli": "^6.0.1"
+  }
+}

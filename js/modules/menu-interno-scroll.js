@@ -1,25 +1,20 @@
 export default function initMenuInternoScroll() {
   const linksInternos = document.querySelectorAll('[data-menu="list"] a');
 
-
-if(linksInternos){
   function scrollToSection(event) {
     event.preventDefault();
     const href = event.currentTarget.getAttribute("href");
     const section = document.querySelector(href);
-    
+
     section.scrollIntoView({
-      behavior: 'smooth',
-      block: 'start',
-    })
+      behavior: "smooth",
+      block: "start",
+    });
   }
-  
-  
-  linksInternos.forEach((link) => {
-    link.addEventListener("click", scrollToSection);
-  });
+
+  if (linksInternos) {
+    linksInternos.forEach((link) => {
+      link.addEventListener("click", scrollToSection);
+    });
+  }
 }
-}
-
-
-
